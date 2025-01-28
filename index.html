@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>60-as Évek Amerikai Autói</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Fő navigáció -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Kezdőlap</a></li>
+                <li><a href="#">Autók</a></li>
+                <li><a href="#">Történelem</a></li>
+                <li><a href="#">Galéria</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Nyitó szekció -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>60-as Évek Amerikai Autói</h1>
+            <p>A korszak legikonikusabb autómodellei</p>
+        </div>
+    </section>
+
+    <!-- Autók bemutatása -->
+    <section class="car-info">
+        <h2>Főbb Modellek</h2>
+        <div class="car">
+            <img src="ford_mustang.jpg" alt="Ford Mustang">
+            <h3>Ford Mustang</h3>
+            <p>A Ford Mustang az 1960-as évek egyik legismertebb sportkocsija, amely újraértelmezte az amerikai autóipart.</p>
+        </div>
+        <div class="car">
+            <img src="chevrolet_corvette.jpg" alt="Chevrolet Corvette">
+            <h3>Chevrolet Corvette</h3>
+            <p>A Chevrolet Corvette a szupersportkocsik középpontjában állt, híres volt a teljesítményéről és eleganciájáról.</p>
+        </div>
+        <div class="car">
+            <img src="cadillac.jpg" alt="Cadillac">
+            <h3>Cadillac</h3>
+            <p>A Cadillac a luxus és a stílus szinonimája volt az 1960-as években, minden egyes modellje a csúcstechnológiát képviselte.</p>
+        </div>
+    </section>
+
+    <!-- Galéria -->
+    <section id="gallery">
+        <h2>Galéria</h2>
+        <div class="gallery-images">
+            <img src="car1.jpg" alt="Autó 1">
+            <img src="car2.jpg" alt="Autó 2">
+            <img src="car3.jpg" alt="Autó 3">
+        </div>
+    </section>
+
+    <!-- Történelem -->
+    <section id="history">
+        <h2>Az 1960-as Évek Autóipara</h2>
+        <p>Az 1960-as évek az amerikai autóipar aranykora volt, új technológiák, dizájnok és versenyautók születtek. Az autógyártók új piacokat céloztak meg, miközben megőrizték az amerikai autóipar hagyományos erejét és stílusát.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 60-as Évek Amerikai Autói. Minden jog fenntartva.</p>
+    </footer>
+
+</body>
+</html>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#hero {
+    background-image: url('background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-family: 'Lora', serif;
+    font-size: 3em;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+}
+
+.car-info {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.car-info h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.car {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.car h3 {
+    margin-top: 15px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.car p {
+    font-size: 1em;
+    color: #555;
+}
+
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-images img {
+    width: 30%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+#history {
+    background-color: #e0e0e0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 1em;
+}
